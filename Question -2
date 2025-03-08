@@ -1,1 +1,13 @@
-// 
+// 2)	Write a React component that accepts two numbers as props and returns the sum inside an HTML <div>. Use JSX expressions inside the return statement.
+
+import React from 'react';
+
+const SumComponent = ({ num1, num2 }) => {
+  return (
+    <div>
+      The sum of {22} and {100} is: {22 + 100}
+    </div>
+  );
+};
+
+export default SumComponent;
