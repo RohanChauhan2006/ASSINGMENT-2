@@ -1,0 +1,24 @@
+// 1)	Create a simple React component that returns JSX with the following:
+// a)	A heading element (<h1>) that says "Welcome to JSX!"
+// b)	A paragraph (<p>) with a brief description of what JSX is.
+// c)	A button that, when clicked, logs a message in the console
+
+
+import React from 'react';
+
+const SimpleComponent = () => {
+  // Function to handle button click
+  const handleClick = () => {
+    console.log('Button clicked!');
+  };
+
+  return (
+    <div>
+      <h1>Welcome to JSX!</h1>
+      <p>JSX (JavaScript XML) is a syntax extension for JavaScript. It allows you to write HTML-like code within JavaScript to describe the UI structure in a readable way.</p>
+      <button onClick={handleClick}>Click Me</button>
+    </div>
+  );
+};
+
+export default SimpleComponent;
