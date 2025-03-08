@@ -1,0 +1,21 @@
+// 3)	Write a React component that renders an unordered list (<ul>) of your favorite movies. Use an array and map() to render each movie as a list item (<li>).
+
+import React from 'react';
+
+const FavoriteMovies = () => {
+
+  const movies = ['Inception', 'The Shawshank Redemption', 'The Dark Knight', 'Interstellar', 'The Godfather'];
+
+  return (
+    <div>
+      <h2>My Favorite Movies</h2>
+      <ul>
+        {movies.map((movie, index) => (
+          <li key={index}>{movie}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default FavoriteMovies;
